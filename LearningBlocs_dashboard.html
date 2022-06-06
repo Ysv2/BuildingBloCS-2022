@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LearningBlocs</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Homepage" content="Display and Login of the powerful learning tool">
+        <meta http-equiv="refresh" content="30">
+        <link rel="stylesheet" href="./LearningBlocs.css" type="text/css">
+        <script src="./LearningBlocs.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <!--Unknown user profile picture-->
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT8rUrONNdHVq3bhmLHXa7_zH6Do6Cn0JhOA&usqp=CAU" class="icon">
+            <!--Searchbar-->
+            <div>
+                <input type="text" placeholder="Search">
+            </div>
+            <!--Website Name-->
+            <b class="logoname">Learning Blocs</b>
+             <!--Login Button-->
+            <button onclick=logout() class="logoutbutton">Logout</button>
+
+            
+        </header>
+        <div class="sidenav">
+            <h1>My Subjects:</h1>
+            <button type ="button" class="sidenavlinks" onclick="opensubject(event, 'Math')" id="defaultOpen">Math</button>
+            <button type ="button" class="sidenavlinks" onclick="opensubject(event, 'Science')">Science</button>
+            <button type ="button" class="sidenavlinks" onclick="opensubject(event, 'Computing')">Computing</button>
+            <button type ="button" class="sidenavlinks" onclick="opensubject(event, 'English')">English</button>
+        </div>
+        <div id="Math" class="sidenav_content">
+            <h3>Math Sucks</h3>
+        </div>
+        <div id="Science" class="sidenav_content">
+            <h3>Science Sucks</h3>
+        </div>
+        <div id="Computing" class="sidenav_content">
+            <h3>Computing Sucks</h3>
+        </div>
+        <div id="English" class="sidenav_content">
+            <h3>English Sucks</h3>
+        </div>
+    </body>
+
+      
+
+</html>
